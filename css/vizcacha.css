@@ -1,0 +1,18 @@
+body {
+	background-color:#3a7a4b;
+	background-image: url("../figuras/vizcachafondo.jpg" );
+	background-repeat: no-repeat, repeat;
+	background-size: cover;
+}
+h3 {color:#1a4c6b;}
+h4 {color:#263533;}
+p {color:#442a2d; font-size:12pt; font-family:"Verdana", sans-serif}
+
+table.center {
+	margin-left:auto;
+	margin-right:auto;
+}
+mark {
+    color: white;
+    background-color:rgba(0, 0 ,0, 0.56)
+}
