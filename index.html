@@ -5,14 +5,31 @@
 <head>
 <title> Fauna Andina </title>  
 <meta charset="utf-8">
+</style>
 <link rel="stylesheet" type="text/css" href="css/estilos.css">
+<style type="text/css">
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+</style>
 </head>
 
 
 <body>
+<div id="overlay" onclick="off()"></div>
 
 <h1 style = "text-align:center;"> <mark>Fauna Andina</mark> </h1>
-
+<div>
 <table style="background-color:rgba(0, 0 , 0, 0.56)" border="0" cellpadding="2" align="center">
 
 
@@ -47,6 +64,21 @@
 </tr>
 
 </table>
+</div>
+
+<div style = "text-align:center;">
+  <button onclick="on()">Apagar las luces</button>
+</div>
+<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+
 </body>
 
 

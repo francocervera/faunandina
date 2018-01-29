@@ -1,3 +1,12 @@
+.darkenBackground {
+	height: 100%;
+	width: 100%;
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	background-color: rgb(0, 0, 0, 0.5);
+	background-repeat:repeat;
+}
 body {
 	background-color:#3a7a4b;
 	background-image: url("../figuras/fondo.jpg" );

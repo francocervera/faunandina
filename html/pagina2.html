@@ -7,8 +7,22 @@
 <title> La Vizcacha. </title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../css/vizcacha.css">
+<style type="text/css">
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+</style>
 </head>
-
 <body>
 <p style = "text-align:center;"><a href="../index.html"><img src="../figuras/atras.png" width="50" height="50"></a> 
 
@@ -23,6 +37,21 @@
 <a href="../html/pagina6.html"><img src="../figuras/osodeanteojos.jpg" width="50" height="50"></a>
 
 </p>
+
+<div id="overlay" onclick="off()"></div>
+
+<div style = "text-align:center;">
+  <button onclick="on()">Apagar las luces</button>
+</div>
+<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
 
 <h1 style = "text-align:center;"> <mark>La Vizcacha</mark> </h1>
 <h3 style = "text-align:center;"> <mark>Lagidium Viscacia</mark> </h3>
