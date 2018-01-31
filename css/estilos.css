@@ -12,6 +12,7 @@ body {
 	background-image: url("../figuras/fondo.jpg" );
 	background-repeat: no-repeat, repeat;
 	background-size: cover;
+	margin-left:120pt;margin-right:120pt
 }
 h3 {color:#1a4c6b;}
 h4 {color:#263533;}
