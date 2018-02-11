@@ -7,27 +7,61 @@
 <title>La Vicuña. </title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../css/vicuna.css">
+<style type="text/css">
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+.contenido {
+    position: relative;
+    z-index: 3;
+}
+</style>
 </head>
-
 <body>
-<p style = "text-align:center;"><a href="../index.html"><img src="../figuras/atras.png" width="50" height="50"></a> 
+<p class="contenido" style = "text-align:center;"><a href="../index.html"><img src="../figuras/atras.png" width="50" height="50"></a> 
 
-<a href="../html/pagina1.html"><img src="../figuras/condor.jpg" width="50" height="50"></a>
+<a class="contenido" href="../html/pagina1.html"><img src="../figuras/condor.jpg" width="50" height="50"></a>
 
-<a href="../html/pagina2.html"><img src="../figuras/vizcacha.png" width="50" height="50"></a>
+<a class="contenido" href="../html/pagina2.html"><img src="../figuras/vizcacha.png" width="50" height="50"></a>
 
-<a href="../html/pagina3.html"><img src="../figuras/puma.jpg" width="50" height="50"></a>
+<a class="contenido" href="../html/pagina3.html"><img src="../figuras/puma.jpg" width="50" height="50"></a>
 
-<a href="../html/pagina4.html"><img src="../figuras/llama.jpg" width="50" height="50"></a>
+<a class="contenido" href="../html/pagina4.html"><img src="../figuras/llama.jpg" width="50" height="50"></a>
 
-<a href="../html/pagina6.html"><img src="../figuras/osodeanteojos.jpg" width="50" height="50"></a>
+<a class="contenido" href="../html/pagina6.html"><img src="../figuras/osodeanteojos.jpg" width="50" height="50"></a>
 
 </p>
+
+<div class="contenido" id="overlay" onclick="off()"></div>
+
+<div style = "text-align:center;">
+  <button onclick="on()">Apagar las luces</button>
+</div>
+<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
 
 <h1 style = "text-align:center;"> <mark>La Vicuña</mark> </h1>
 <h3 style = "text-align:center;"> <mark>Vicugna Vicugna</mark> </h3>
 
-<p style = "text-align:center;"><img src= "../figuras/vicuna.jpeg" width="200" height="150"></p>
+<p style = "text-align:center;"><img src= "../figuras/vicuna.jpeg" width="200" height="150">   <iframe width="200" height="150" src="https://www.youtube.com/embed/eUTs1MF63Zw?controls=0&autoplay=1&modestbranding=1&showinfo=0" frameborder="0">
+</iframe></p>
 <hr width="20%" color="black">
 <h2 style = "text-align:center;"> <mark>Distribución</mark> </h4>
 <h1 style = "text-align:center;"> &#9672;</h1>
@@ -43,6 +77,7 @@
 <h1 style = "text-align:center;"> &#9672;</h1>
 <p style = "text-align:center;"> <mark>La vicuña está clasificada como de Preocupación Menor (LC) en la Lista Roja de la UICN y figura en los Apéndices I y II de la CITES y el Apéndice I de la Convención sobre Especies Migratorias (CMS o Convención de Bonn), a excepción de las poblaciones peruanas en el Apéndice II.</mark></p>
 <p style = "text-align:center;"><mark>También está listado como Amenazado por el Servicio de Pesca y Vida Silvestre de los Estados Unidos.</mark> </p>
+<p style = "text-align:center;"><mark>Durante el período de los Incas, las vicuñas fueron capturadas para ser esquiladas y luego liberadas. Posteriormente, la demanda de su valiosa lana ha sido alta y la caza excesiva provocó una disminución masiva de la población, con cifras que alcanzaron un mínimo histórico en la década de 1960. Desde entonces, se han implementado una serie de iniciativas de conservación y se están recuperando números. Sin embargo, todavía hay una serie de amenazas.</mark> </p>
 
 
 </body>

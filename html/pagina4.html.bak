@@ -7,30 +7,65 @@
 <title> La Llama. </title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../css/llama.css">
+<style type="text/css">
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+.contenido {
+    position: relative;
+    z-index: 3;
+}
+</style>
 </head>
 
 <body>
-<p style = "text-align:center;"><a href="../index.html"><img src="../figuras/atras.png" width="50" height="50"></a> 
+<p class="contenido" style = "text-align:center;"><a href="../index.html"><img src="../figuras/atras.png" width="50" height="50"></a> 
 
-<a href="../html/pagina1.html"><img src="../figuras/condor.jpg" width="50" height="50"></a>
+<a class="contenido" href="../html/pagina1.html"><img src="../figuras/condor.jpg" width="50" height="50"></a>
 
-<a href="../html/pagina2.html"><img src="../figuras/vizcacha.png" width="50" height="50"></a>
+<a class="contenido" href="../html/pagina2.html"><img src="../figuras/vizcacha.png" width="50" height="50"></a>
 
-<a href="../html/pagina3.html"><img src="../figuras/puma.jpg" width="50" height="50"></a>
+<a class="contenido" href="../html/pagina3.html"><img src="../figuras/puma.jpg" width="50" height="50"></a>
 
-<a href="../html/pagina5.html"><img src="../figuras/vicuna.jpeg" width="50" height="50"></a>
+<a class="contenido" href="../html/pagina5.html"><img src="../figuras/vicuna.jpeg" width="50" height="50"></a>
 
-<a href="../html/pagina6.html"><img src="../figuras/osodeanteojos.jpg" width="50" height="50"></a>
+<a class="contenido" href="../html/pagina6.html"><img src="../figuras/osodeanteojos.jpg" width="50" height="50"></a>
 
 </p>
 
-<h1 style = "text-align:center;"> <mark>La Llama</mark> </h1>
-<h3 style = "text-align:center;"> <mark>Lama Glama</mark> </h3>
-<p style = "text-align:center;"><img src= "../figuras/llama.jpg" width="200" height="150"></p>
-<hr width="20%" color="black">
-<h2 style = "text-align:center;"> <mark>Distribución</mark> </h4>
-<h1 style = "text-align:center;"> &#9672;</h1>
-<p style = "text-align:center;"> <mark>Migraron a América del Sur hace unos tres millones de años durante el Gran Intercambio Estadounidense. Al final de la última edad de hielo (hace 10,000-12,000 años), los camélidos se extinguieron en América del Norte. A partir de 2007, había más de siete millones de llamas y alpacas en América del Sur, y debido a la importación de América del Sur a finales del siglo 20, ahora hay más de 158,000 llamas y 100,000 alpacas en los Estados Unidos y Canadá.</mark> </p>
+<div id="overlay" onclick="off()"></div>
+
+<div style = "text-align:center;">
+  <button onclick="on()">Apagar las luces</button>
+</div>
+<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+
+<h1 class="contenido" style = "text-align:center;"> <mark>La Llama</mark> </h1>
+<h3 class="contenido" style = "text-align:center;"> <mark>Lama Glama</mark> </h3>
+<p class="contenido" style = "text-align:center;"><img src= "../figuras/llama.jpg" width="200" height="150">   <iframe width="200" height="150" src="https://www.youtube.com/embed/xZ6Kj-jPRuI?controls=0&autoplay=1&modestbranding=1&showinfo=0" frameborder="0">
+</iframe></p>
+<hr class="contenido" width="20%" color="black">
+<h2 class="contenido" style = "text-align:center;"> <mark>Distribución</mark> </h4>
+<h1 class="contenido" style = "text-align:center;"> &#9672;</h1>
+<p class="contenido" style = "text-align:center;"> <mark>Migraron a América del Sur hace unos tres millones de años durante el Gran Intercambio Estadounidense. Al final de la última edad de hielo (hace 10,000-12,000 años), los camélidos se extinguieron en América del Norte. A partir de 2007, había más de siete millones de llamas y alpacas en América del Sur, y debido a la importación de América del Sur a finales del siglo 20, ahora hay más de 158,000 llamas y 100,000 alpacas en los Estados Unidos y Canadá.</mark> </p>
 <hr width="20%" color="black">
 <h2 style = "text-align:center;"> <mark>Biología</mark> </h4>
 <h1 style = "text-align:center;"> &#9672;</h1>
@@ -39,7 +74,7 @@
 <hr width="20%" color="black">
 <h2 style = "text-align:center;"> <mark>Estatus de conservación</mark> </h4>
 <h1 style = "text-align:center;"> &#9672;</h1>
-<p style = "text-align:center;"> <mark>Las llamas no están en peligro y de hecho están bastante extendidas en la actualidad. Hay casi 3 millones de personas en todo el mundo con casi el 70% de la población ubicada en Bolivia. (Parera, 2002).</mark> </p>
+<p style = "text-align:center;"> <mark>Las llamas no están en peligro y de hecho están bastante extendidas en la actualidad. Hay casi 3 millones de personas en todo el mundo con casi el 70% de la población ubicada en Bolivia (Parera, 2002).</mark> </p>
 
 
 </body>

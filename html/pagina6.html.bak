@@ -7,6 +7,25 @@
 <title>Oso de Anteojos. </title>
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="../css/oso.css">
+<style type="text/css">
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+.contenido {
+    position: relative;
+    z-index: 3;
+}
+</style>
 </head>
 
 <body>
@@ -24,10 +43,26 @@
 
 </p>
 
+<div id="overlay" onclick="off()"></div>
+
+<div style = "text-align:center;">
+  <button onclick="on()">Apagar las luces</button>
+</div>
+<script>
+function on() {
+    document.getElementById("overlay").style.display = "block";
+}
+
+function off() {
+    document.getElementById("overlay").style.display = "none";
+}
+</script>
+
 <h1 style = "text-align:center;"> <mark>Oso de Anteojos</mark> </h1>
 <h3 style = "text-align:center;"> <mark>Tremarctos ornatus</mark> </h3>
 
-<p style = "text-align:center;"><img src= "../figuras/osodeanteojos.jpg" width="200" height="150"></p>
+<p style = "text-align:center;"><img src= "../figuras/osodeanteojos.jpg" width="200" height="150">   <iframe width="200" height="150" src="https://www.youtube.com/embed/nDg037ERZVU?controls=0&autoplay=1&modestbranding=1&showinfo=0" frameborder="0">
+</iframe></p>
 <hr width="20%" color="black">
 <h2 style = "text-align:center;"> <mark>Distribución</mark> </h4>
 <h1 style = "text-align:center;"> &#9672;</h1>
@@ -40,7 +75,9 @@
 <hr width="20%" color="black">
 <h2 style = "text-align:center;"> <mark>Estatus de conservación</mark> </h4>
 <h1 style = "text-align:center;"> &#9672;</h1>
-<p style = "text-align:center;"> <mark>Clasificado como Vulnerable en la Lista Roja de la UICN y listado en el Apéndice I de la CITES</mark> </p>
+<p style = "text-align:center;"> <mark>Clasificado como Vulnerable en la Lista Roja de la UICN y listado en el Apéndice I de la CITES.</mark> </p>
+<p style = "text-align:center;"> <mark>La destrucción y la fragmentación del hábitat han sido frecuentes en el área donde habitan estos osos y es probable que hayan sido las principales causas de su disminución en número. Además, los osos de anteojos pueden ser perseguidos por los agricultores locales que los culpan por matar ganado y por destruir cultivos de maíz. Tristemente, la fragmentación del hábitat está llevando a los osos y los humanos a una mayor proximidad, lo que lleva a un mayor conflicto entre humanos y osos.</mark> </p>
+
 
 
 </body>

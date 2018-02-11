@@ -21,22 +21,19 @@
     z-index: 2;
     cursor: pointer;
 }
+.contenido {
+    position: relative;
+    z-index: 3;
+}
 </style>
 </head>
 
-
 <body>
-<div id="overlay" onclick="off()"></div>
-
-<h1 style = "text-align:center;"> <mark>Fauna Andina</mark> </h1>
-<div>
-<table style="background-color:rgba(0, 0 , 0, 0.56)" border="0" cellpadding="2" align="center">
 
 
+<h1 class="contenido" style = "text-align:center;"> <mark>Fauna Andina</mark> </h1>
 
-</tr>
-
-<tr>
+<table class="contenido" style="background-color:rgba(0, 0 , 0, 0.56)" border="0" cellpadding="2" align="center">
 
 <td>
 <p style=center><a href="html/pagina1.html"><img src="figuras/condor.jpg" width="200" height="150"></a><figcaption style="text-align:center;color:white">Cóndor Andino</figcaption></p>
@@ -49,7 +46,6 @@
 </td>
 
 </tr>
-<tr>
 
 <td>
 <p style=center><a href="html/pagina4.html"><img src="figuras/llama.jpg" width="200" height="150"></a><figcaption style="text-align:center;color:white">Llama</figcaption></p>
@@ -61,11 +57,9 @@
 <p style=center><a href="html/pagina6.html"><img src="figuras/osodeanteojos.jpg" width="200" height="150"></a><figcaption style="text-align:center;color:white">Oso de anteojos</figcaption></p>
 </td>
 
-</tr>
-
 </table>
-</div>
 
+<div id="overlay" onclick="off()"></div>
 <div style = "text-align:center;">
   <button onclick="on()">Apagar las luces</button>
 </div>
